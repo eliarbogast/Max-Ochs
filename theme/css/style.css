@@ -122,7 +122,8 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: #cc302b;
+  color: #ffdf00;
+  color: #ffdf00;
 }
 
 .section-heading h2 {
@@ -165,7 +166,7 @@ Common Styles
 }
 
 .text-color {
-  color: #cc302b;
+  color: #ffdf00;
 }
 
 /*-------------------
@@ -196,15 +197,15 @@ Common Styles
   background: #385777;
 }
 .btn-main:hover {
-  background: #cc302b;
+  background: #ffdf00;
   color: #fff;
-  border-color: #cc302b;
+  border-color: #ffdf00;
 }
 
 .btn-main-2 {
-  background: #cc302b;
+  background: #ffdf00;
   color: #fff;
-  border-color: #cc302b;
+  border-color: #ffdf00;
 }
 .btn-main-2:hover {
   background: #385777;
@@ -214,7 +215,7 @@ Common Styles
 
 .btn-white {
   background: #fff !important;
-  color: #cc302b;
+  color: #ffdf00;
   border-color: #fff;
 }
 
@@ -244,7 +245,7 @@ a {
 a:hover, a:focus {
   outline: none;
   text-decoration: none;
-  color: #cc302b;
+  color: #ffdf00;
 }
 
 .border-top {
@@ -275,7 +276,7 @@ a:hover, a:focus {
 
 .text-sm {
   font-size: 14px;
-  color: #cc302b;
+  color: #ffdf00;
 }
 
 @media (max-width: 400px) {
@@ -317,7 +318,7 @@ PAGE BANNER
 }
 
 .navbar-nav .nav-link.active {
-  color: #cc302b !important;
+  color: #ffdf00; !important;
 }
 
 .navbar {
@@ -393,7 +394,7 @@ PAGE BANNER
 .dropdown-item:hover {
   color: #fff;
   text-decoration: none;
-  background-color: #cc302b;
+  background-color: #ffdf00;
 }
 
 .header-white {
@@ -517,7 +518,7 @@ h1 {
   text-transform: uppercase;
   font-size: 18px;
   letter-spacing: 1px;
-  color: #cc302b;
+  color: #ffdf00;
 }
 
 .book-preview {
@@ -584,7 +585,7 @@ h1 {
 
 .owl-book .item .overlay > a:hover {
   color: white;
-  background: #cc302b;
+  background: #ffdf00;
 }
 
 .owl-reviews .item {
@@ -638,7 +639,7 @@ h1 {
   box-shadow: 12px 7px 90px 0 rgba(110, 123, 131, 0.1);
 }
 .book-info ul li i {
-  color: #cc302b;
+  color: #ffdf00;
 }
 
 .book-item {
@@ -675,7 +676,7 @@ h1 {
   transition: all 0.35s ease;
 }
 .book-item .hover-item i:hover {
-  background: #cc302b;
+  background: #ffdf00;
   color: #fff;
 }
 
@@ -797,15 +798,18 @@ SECTION TESTIMONIAL
 }
 
 .rating a {
-  color: #cc302b;
+  color: #ffdf00;
 }
 
 /*---------------------------
 CONTACT PAGE
 -----------------------------*/
 .contact-info-block {
+  display: block;
   padding: 60px 20px;
   background: #fff;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact-info-block h4 {
   margin-bottom: 0px;
@@ -814,7 +818,7 @@ CONTACT PAGE
   font-size: 40px;
   margin-bottom: 20px;
   display: block;
-  color: #cc302b;
+  color: #ffdf00;
 }
 
 .form-control {
@@ -826,7 +830,7 @@ CONTACT PAGE
 }
 
 .form-control:focus, .form-control:hover {
-  border-color: #cc302b;
+  border-color: #ffdf00;
   box-shadow: none;
 }
 
@@ -838,7 +842,7 @@ CONTACT PAGE
   padding: 40px;
   color: #000;
   font-size: 18px;
-  border-left: 4px solid #cc302b;
+  border-left: 4px solid #ffdf00;
 }
 
 .share li a {
@@ -858,7 +862,7 @@ CONTACT PAGE
   color: #777;
 }
 .sidebar-widget.tags a:hover {
-  background: #cc302b;
+  background: #ffdf00;
   color: #fff;
 }
 
@@ -874,7 +878,7 @@ CONTACT PAGE
 }
 
 .current-year {
-  color: #cc302b !important;
+  color: #ffdf00; !important;
 }
 
 .text-black {
@@ -890,7 +894,7 @@ CONTACT PAGE
   right: 30px;
   bottom: 50px;
   z-index: 999;
-  background: #cc302b;
+  background: #ffdf00;
   color: #fff !important;
   border-radius: 100%;
   opacity: 0;
