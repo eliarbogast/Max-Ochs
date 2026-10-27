@@ -927,44 +927,101 @@ CONTACT PAGE
   border: 0;
 }
 
-/* Top section: text beside the Earflings album art, video below */
+/* Top section: name, then headshot and album cover as a matched pair, video below */
 #banner.banner-main:before {
   height: 100%;
 }
-#banner .main-banner {
-  padding: 80px 0 40px;
+#banner.py-7 {
+  padding: 9rem 0 5rem;
 }
-.hero-headshot {
-  width: 40%;
-  height: auto;
-  padding: 2px;
-  border: thick solid #263b5e;
-  margin-bottom: 30px;
+.hero-intro {
+  margin-bottom: 3rem;
 }
-.hero-album {
+.hero-intro h1 {
+  margin-bottom: 0.5rem;
+}
+.hero-tagline {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6a7695;
+}
+.hero-card {
+  height: 100%;
+  margin: 0;
+  background: #fff;
+  box-shadow: 12px 7px 90px 0 rgba(110, 123, 131, 0.12);
+}
+.hero-photo {
   display: block;
   width: 100%;
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 2px;
-  border: thick solid #263b5e;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.hero-card figcaption {
+  padding: 1.75rem 2rem 2rem;
+  text-align: center;
+}
+.hero-eyebrow {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding-bottom: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #263b5e;
+  border-bottom: 3px solid #ffdf00;
+}
+.hero-card-title {
+  margin-bottom: 0.75rem;
+  color: #263b5e;
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+.hero-card-title a {
+  color: #263b5e;
+}
+.hero-card-title a:hover {
+  text-decoration: underline;
+}
+.hero-card p {
+  margin: 0;
+}
+.hero-link {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #385777;
+}
+.hero-link i {
+  margin-left: 4px;
+  font-size: 0.7rem;
+}
+.hero-link:hover {
+  color: #263b5e;
+  text-decoration: underline;
 }
 .hero-video {
-  margin-top: 60px;
+  margin-top: 3rem;
 }
 .hero-caption {
   margin-top: 10px;
   text-align: center;
 }
-@media (max-width: 991px) {
-  #banner .main-banner {
-    padding-bottom: 30px;
+@media (max-width: 767px) {
+  #banner.py-7 {
+    padding: 7rem 0 3rem;
   }
-  #banner .main-banner p {
-    padding-right: 0;
+  .hero-intro h1 {
+    font-size: 44px;
+    line-height: 52px;
   }
   .hero-video {
-    margin-top: 40px;
+    margin-top: 1.5rem;
   }
 }
 
