@@ -1115,3 +1115,184 @@ CONTACT PAGE
 .work-credit {
   margin-left: 4px;
 }
+
+/* ==============================================================
+   NEWSPAPER THEME
+   Newsprint paper, black ink, ruled lines, Playfair headlines.
+   Photos stay in colour with a light "printed" warmth.
+   ============================================================== */
+:root {
+  --paper: #f4f1ea;
+  --paper-dark: #ebe6da;
+  --ink: #1a1a1a;
+  --ink-soft: #333;
+  --ink-muted: #5c574e;
+}
+::selection { background: var(--ink); color: var(--paper); }
+
+body {
+  background: var(--paper);
+  color: var(--ink-soft);
+  font-family: "Lora", Georgia, serif;
+  font-weight: 400;
+}
+p { color: var(--ink-soft); }
+h1, h2, h3, h4, h5, h6,
+.section-heading h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  color: var(--ink);
+  font-weight: 700;
+}
+a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: var(--ink); }
+a:hover, a:focus,
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Masthead navigation */
+.main-navigation,
+.site-header,
+.header-white,
+.fixed-top.site-header,
+.navbar-collapse.collapse.show {
+  background: var(--paper);
+}
+.main-navigation { border-bottom: 3px double var(--ink); }
+.navbar-brand h2,
+.navbar-brand h2 .text-color {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 900;
+  color: var(--ink) !important;
+}
+.navbar-nav .nav-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink) !important;
+}
+.navbar-nav .nav-link.active {
+  color: var(--ink) !important;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.navbar-toggler { color: var(--ink); }
+
+/* Top section: a folded, tilted crossword page lying under the paper, fading out */
+#banner {
+  position: relative;
+  z-index: 0;            /* keeps the page behind the content */
+  overflow: hidden;      /* the tilted page never causes sideways scrolling */
+}
+#banner.banner-main:before {
+  z-index: -1;
+  top: 30px;
+  left: calc(50% + 120px);
+  width: 760px;
+  height: 900px;
+  transform: rotate(5deg);
+  pointer-events: none;
+  background:
+    /* horizontal fold crease: dark line, light ridge below, soft shading on the lower half */
+    linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.03) 44.9%, rgba(0,0,0,.11) 45%, rgba(255,255,255,.7) 45.25%, rgba(255,255,255,.15) 47%, rgba(0,0,0,.025) 75%, rgba(0,0,0,0) 100%),
+    url("../images/crossword-tile.svg") repeat center top / 360px;
+  background-color: #f8f6f0;
+  box-shadow: 0 14px 40px rgba(0,0,0,.09), 0 1px 3px rgba(0,0,0,.07);
+  -webkit-mask-image: linear-gradient(to bottom, #000 35%, transparent 96%);
+  mask-image: linear-gradient(to bottom, #000 35%, transparent 96%);
+}
+.hero-intro h1 {
+  margin-bottom: 0;
+  padding: 16px 0 10px;
+  font-size: 78px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  border-top: 5px double var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+.hero-tagline {
+  padding: 8px 0;
+  font-family: "Lora", Georgia, serif;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: none;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+.hero-card {
+  background: var(--paper);
+  box-shadow: none;
+  border: 1px solid var(--ink);
+}
+.hero-card .hero-photo { border-bottom: 1px solid var(--ink); }
+.hero-eyebrow {
+  font-family: "Open Sans", sans-serif;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+.hero-card-title, .hero-card-title a, .hero-link { color: var(--ink); }
+.hero-caption i { color: var(--ink-muted); }
+.video-embed { border: 1px solid var(--ink); }
+
+/* Photos: keep colour, add a touch of printed warmth */
+.hero-photo[src*="headshot"],
+.work-img,
+.about .about-img img {
+  filter: saturate(0.9) sepia(0.08) contrast(1.03);
+}
+
+/* Section dividers as double rules */
+.border-top { border-top: 3px double var(--ink) !important; }
+.section-heading p { font-style: italic; color: var(--ink-muted); }
+
+/* Work cards */
+.blog-item {
+  background: var(--paper);
+  box-shadow: none;
+  border: 1px solid var(--ink) !important;
+  border-radius: 0;
+}
+.work-img { border-bottom: 1px solid var(--ink); }
+.blog-meta {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+/* About */
+.about:before { background: var(--paper-dark); border-radius: 0; }
+.about .about-img img {
+  padding: 8px;
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  box-shadow: none;
+}
+.author-info .lead { font-style: italic; color: var(--ink-muted); }
+
+/* Contact */
+.bg-grey, .contact { background: var(--paper); }
+.contact-info-block {
+  background: transparent;
+  border: 1px solid var(--ink);
+}
+.contact-info-block i { color: var(--ink); }
+.contact-info-block h5 a:hover { color: var(--ink); }
+
+/* Footer and back-to-top */
+.footer-btm { border-top: 3px double var(--ink) !important; }
+.current-year { color: var(--ink); }
+.scroll-to-top { background: var(--ink); color: var(--paper) !important; }
+.yt-facade:focus-visible { outline-color: var(--ink); }
+
+@media (max-width: 767px) {
+  .hero-intro h1 { font-size: 52px; }
+  .hero-tagline { letter-spacing: 0.1em; }
+}
