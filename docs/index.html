@@ -31,6 +31,36 @@
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- Structured data: tells search engines who this page is about -->
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Max Ochs",
+    "alternateName": "Maxwell David Ochs",
+    "url": "https://maxochs.com/",
+    "image": "https://maxochs.com/images/about/headshot.jpg",
+    "description": "Folk guitarist, poet and folklorist from Annapolis, Maryland; featured on Takoma's 'Contemporary Guitar Spring '67'.",
+    "jobTitle": "Folklorist, musician and poet",
+    "homeLocation": {
+      "@type": "Place",
+      "name": "Annapolis, Maryland"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "University of Maryland"
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "St. John's College"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Visitor counter: paste the GoatCounter snippet here once the account exists -->
+
 </head>
 
 
@@ -101,7 +131,7 @@
             <div class="col-md-6 col-lg-5 mb-4">
                 <figure class="hero-card">
                     <a href="https://wapo.st/47fpzmv" target="_blank" rel="noopener">
-                        <img class="hero-photo" src="images/about/headshot.jpg" alt="Max Ochs in a brimmed hat">
+                        <img class="hero-photo" src="images/about/headshot.webp" width="900" height="675" alt="Max Ochs in a brimmed hat">
                     </a>
                     <figcaption>
                         <span class="hero-eyebrow">In the news</span>
@@ -114,7 +144,7 @@
             <!-- Earflings album -->
             <div class="col-md-6 col-lg-5 mb-4">
                 <figure class="hero-card">
-                    <img class="hero-photo" src="images/about/earfling.jpg" alt="Earflings album artwork">
+                    <img class="hero-photo" src="images/about/earfling.webp" width="900" height="900" alt="Earflings album artwork">
                     <figcaption>
                         <span class="hero-eyebrow">Coming soon</span>
                         <h2 class="hero-card-title">Earflings</h2>
@@ -128,7 +158,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <div class="hero-video">
-                    <iframe class="video-embed" src="https://www.youtube.com/embed/cKOPgRChcJw?si=ByuCqap4fayuH7p4" title="No Words For It, filmed by Micah Seidel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a class="video-embed yt-facade" href="https://www.youtube.com/watch?v=cKOPgRChcJw" data-embed="https://www.youtube.com/embed/cKOPgRChcJw?si=ByuCqap4fayuH7p4" data-title="No Words For It, filmed by Micah Seidel" target="_blank" rel="noopener" aria-label="Play video: No Words For It, filmed by Micah Seidel"><img src="https://i.ytimg.com/vi/cKOPgRChcJw/maxresdefault.jpg" alt="" width="1280" height="720" decoding="async"><span class="yt-play" aria-hidden="true"></span></a>
                     <p class="hero-caption"><i>No Words For It, filmed by Micah Seidel</i></p>
                 </div>
             </div>
@@ -143,18 +173,18 @@
                 <div class="section-heading text-center">
                     <h3 class="text-lg mb-3">Listen to Max Ochs and Rugburn's Playlist</h3>
                 </div>
-                <iframe class="video-embed" src="https://www.youtube.com/embed/videoseries?si=rrTNCfmvmvyACzKD&amp;list=PLUOeCMK1U_ugdKFq7OEu2PouyLc4isdCW" title="Max Ochs and Rugburn playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <a class="video-embed yt-facade" href="https://www.youtube.com/playlist?list=PLUOeCMK1U_ugdKFq7OEu2PouyLc4isdCW" data-embed="https://www.youtube.com/embed/videoseries?si=rrTNCfmvmvyACzKD&amp;list=PLUOeCMK1U_ugdKFq7OEu2PouyLc4isdCW" data-title="Max Ochs and Rugburn playlist" target="_blank" rel="noopener" aria-label="Play video: Max Ochs and Rugburn playlist"><img src="https://i.ytimg.com/vi/s3XkwSL1UMo/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></a>
             </div>
             <div class="col-lg-6">
                 <div class="section-heading text-center">
                     <h3 class="text-lg mb-3">Listen to Max Ochs' YouTube recordings</h3>
                 </div>
-                <iframe class="video-embed" src="https://www.youtube.com/embed/VNQZ7tLegVM?si=E68SFwpU4AqJZhFZ" title="Max Ochs YouTube recordings" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <a class="video-embed yt-facade" href="https://www.youtube.com/watch?v=VNQZ7tLegVM" data-embed="https://www.youtube.com/embed/VNQZ7tLegVM?si=E68SFwpU4AqJZhFZ" data-title="Max Ochs plays Desperate Man" target="_blank" rel="noopener" aria-label="Play video: Max Ochs plays Desperate Man"><img src="https://i.ytimg.com/vi/VNQZ7tLegVM/maxresdefault.jpg" alt="" width="1280" height="720" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span></a>
             </div>
         </div>
         <div class="justify-content-center" style="margin-top: 100px;">
             <h3 class="text-lg mb-3 text-center">Listen to his SoundCloud music here:</h3>
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1698191232&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/trixter-1" title="Trixter" target="_blank" rel="noopener" style="color: #cccccc; text-decoration: none;">Trixter</a> · <a href="https://soundcloud.com/trixter-1/no-words-for-it" title="No Words for It" target="_blank" rel="noopener" style="color: #cccccc; text-decoration: none;">No Words for It</a></div>
+            <iframe width="100%" height="300" loading="lazy" title="No Words for It on SoundCloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1698191232&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/trixter-1" title="Trixter" target="_blank" rel="noopener" style="color: #cccccc; text-decoration: none;">Trixter</a> · <a href="https://soundcloud.com/trixter-1/no-words-for-it" title="No Words for It" target="_blank" rel="noopener" style="color: #cccccc; text-decoration: none;">No Words for It</a></div>
 	    </div>
     </div>
 </section>
@@ -172,7 +202,7 @@
 		<div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="blog-item card mb-4 mb-lg-0 border-0">
-					<a href="https://www.tompkinssquare.com/max_ochs_hooray.html" target="_blank" rel="noopener"> <img src="images/work/hooray.jpg" alt="Hooray For Another Day album cover" class="img-fluid w-100"> </a>
+					<a href="https://www.tompkinssquare.com/max_ochs_hooray.html" target="_blank" rel="noopener"> <img src="images/work/hooray.webp" width="480" height="480" loading="lazy" decoding="async" alt="Hooray For Another Day album cover" class="img-fluid w-100"> </a>
 					<div class="blog-item-content p-4">
 						<div class="blog-meta mb-2">
 							<span><i class="ti-time mr-2"></i>20 September 2023</span>
@@ -183,7 +213,7 @@
 			</div>
             <div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="blog-item card mb-4 mb-lg-0 border-0">
-					<a href="https://www.youtube.com/watch?v=dTDibrHiliY" target="_blank" rel="noopener"><img src="images/work/motherless.jpg" alt="Drawing of Max Ochs playing guitar" class="img-fluid w-100"></a>
+					<a href="https://www.youtube.com/watch?v=dTDibrHiliY" target="_blank" rel="noopener"><img src="images/work/motherless.webp" width="720" height="720" loading="lazy" decoding="async" alt="Drawing of Max Ochs playing guitar" class="img-fluid w-100"></a>
 					<div class="blog-item-content p-4">
 						<div class="blog-meta mb-2">
 							<span><i class="ti-time mr-2"></i>17 December 2016</span>
@@ -196,7 +226,7 @@
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="blog-item card mb-4 mb-lg-0 border-0">
-					<a href="https://www.youtube.com/watch?v=QZ7wP932ip0" target="_blank" rel="noopener"> <img src="images/surf.jpg" alt="Still from Victor's Rag video" class="img-fluid w-100"> </a>
+					<a href="https://www.youtube.com/watch?v=QZ7wP932ip0" target="_blank" rel="noopener"> <img src="images/work/surf.webp" width="720" height="405" loading="lazy" decoding="async" alt="Still from Victor's Rag video" class="img-fluid w-100"> </a>
 					<div class="blog-item-content p-4">
 						<div class="blog-meta mb-2">
 							<span><i class="ti-time mr-2"></i>20 September 2023</span>
@@ -207,7 +237,7 @@
 			</div>
             <div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="blog-item card mb-4 mb-lg-0 border-0">
-					<a href="https://www.youtube.com/watch?v=qj9S7ztZCXg" target="_blank" rel="noopener"> <img src="images/work/america.jpg" alt="Max Ochs in front of an American flag" class="img-fluid w-100"> </a>
+					<a href="https://www.youtube.com/watch?v=qj9S7ztZCXg" target="_blank" rel="noopener"> <img src="images/work/america.webp" width="220" height="165" loading="lazy" decoding="async" alt="Max Ochs in front of an American flag" class="img-fluid w-100"> </a>
 					<div class="blog-item-content p-4">
 						<div class="blog-meta mb-2">
 							<span><i class="ti-time mr-2"></i>9 July 2022</span>
@@ -218,7 +248,7 @@
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="blog-item card mb-4 mb-lg-0 border-0">
-					<a href="https://frankhudson.org/2019/07/16/dont-die-max-ochs-prayer/" target="_blank" rel="noopener"><img src="images/work/dontdie.jpg" alt="Max Ochs performing with guitar" class="img-fluid w-100"></a>
+					<a href="https://frankhudson.org/2019/07/16/dont-die-max-ochs-prayer/" target="_blank" rel="noopener"><img src="images/work/dontdie.webp" width="480" height="408" loading="lazy" decoding="async" alt="Max Ochs performing with guitar" class="img-fluid w-100"></a>
 					<div class="blog-item-content p-4">
 						<div class="blog-meta mb-2">
 							<span><i class="ti-time mr-2"></i>16 July 2019</span>
@@ -231,7 +261,7 @@
 			</div>
             <div class="col-lg-4 col-md-6 col-sm-6">
 				<div class="blog-item card mb-4 mb-lg-0 border-0">
-					<a href="https://newversenews.blogspot.com/2015/08/dont-jewish.html" target="_blank" rel="noopener"> <img src="images/work/dontjewish.png" alt="Illustration accompanying the poem Don't Jewish" class="img-fluid w-100"> </a>
+					<a href="https://newversenews.blogspot.com/2015/08/dont-jewish.html" target="_blank" rel="noopener"> <img src="images/work/dontjewish.webp" width="720" height="464" loading="lazy" decoding="async" alt="Illustration accompanying the poem Don't Jewish" class="img-fluid w-100"> </a>
 					<div class="blog-item-content p-4">
 						<div class="blog-meta mb-2">
 							<span><i class="ti-time mr-2"></i>23 August 2015</span>
@@ -253,7 +283,7 @@
         <div class="row align-items-center">
             <div class="col-lg-5">
                 <div class="about-img">
-                    <img src="images/about/home-1.jpg" alt="Black-and-white portrait of a young Max Ochs" class="img-fluid w-100">
+                    <img src="images/about/home-1.webp" width="900" height="1120" loading="lazy" decoding="async" alt="Black-and-white portrait of a young Max Ochs" class="img-fluid w-100">
                 </div>
             </div>
 
@@ -286,7 +316,7 @@
                 <div class="contact-info-block text-center mb-4">
                     <i class="ti-email"></i>
                     <p class="mb-0">Email</p>
-                    <h5>maxochs[at]gmail[dot]com</h5>
+                    <h5><span class="js-email" data-user="maxochs" data-domain="gmail.com">maxochs[at]gmail[dot]com</span></h5>
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6">
@@ -312,7 +342,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="footer-btm-menu text-lg-right">
-                    <img src="images/discogsMax.jpg" style="width: 30%; margin-bottom:5px; padding:2px;border:thin solid black;" alt="Portrait of Max Ochs" class="img-fluid">
+                    <img src="images/discogsMax.webp" width="332" height="475" loading="lazy" decoding="async" style="width: 30%; margin-bottom:5px; padding:2px;border:thin solid black;" alt="Portrait of Max Ochs" class="img-fluid">
                 </div>
             </div>
         </div> <!-- / .row -->
